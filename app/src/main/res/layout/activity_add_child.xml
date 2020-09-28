@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context=".AddChildActivity">
+
+
+    <EditText
+        android:id="@+id/txt_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ "
+        android:hint="Child Name "
+        android:inputType="text"
+        android:textSize="20sp" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DOB   "
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/child_dob"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+
+        <Button
+            android:id="@+id/datePickbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="1dp"
+            android:background="@color/colorPrimary"
+            android:clickable="true"
+            android:text="Select"
+            android:textColor="@color/backgroundcolor"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+<!--    <View-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="2dp"-->
+<!--        android:background="#4F131313" />-->
+
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        android:orientation="horizontal">-->
+
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Age"-->
+<!--            android:textSize="24sp"-->
+<!--            android:textStyle="bold" />-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/child_Age"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginLeft="10dp"-->
+<!--            android:hint=""-->
+<!--            android:textSize="22sp"-->
+<!--            android:textStyle="bold" />-->
+
+<!--    </LinearLayout>-->
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#4F131313" />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:text="Gender"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/txt_radiomale"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="2dp"
+            android:text="Male"
+            android:textSize="20sp" />
+
+        <RadioButton
+            android:id="@+id/txt_radiofemale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:text="Female"
+            android:textSize="20sp" />
+
+<!--        <RadioButton-->
+<!--            android:id="@+id/txt_radioTrans"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginLeft="2dp"-->
+<!--            android:text="Trans"-->
+<!--            android:textSize="20sp" />-->
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:background="@color/colorPrimary"
+        android:clickable="true"
+        android:text="Done"
+        android:textColor="@color/backgroundcolor"
+        android:textSize="22sp" />
+
+</LinearLayout>

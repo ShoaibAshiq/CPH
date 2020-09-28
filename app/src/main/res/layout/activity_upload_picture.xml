@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".UploadPicture">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="30dp">
+
+        <ImageView
+            android:id="@+id/uploadImage"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_pic" />
+
+        <EditText
+            android:id="@+id/uploadTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:hint="Title  ( Optional )"
+            android:maxLines="1" />
+
+        <EditText
+            android:id="@+id/uploadDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:hint="Description    ( Optional ) "
+            android:maxLines="2" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/buttonshape"
+            android:clickable="true"
+            android:focusable="true"
+            android:onClick="btnSelectImage"
+            android:padding="15dp"
+            android:text="Select IMG"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnUpload"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/buttonshape"
+            android:clickable="true"
+            android:focusable="true"
+            android:padding="15dp"
+            android:text="Upload"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+</LinearLayout>
